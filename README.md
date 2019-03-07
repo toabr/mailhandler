@@ -2,7 +2,7 @@
 
 * Node.js Backend on port 4000
  * Express
- * mysql
+ * mysql 
 
 * React Frontend on port 3000
  * react-router
