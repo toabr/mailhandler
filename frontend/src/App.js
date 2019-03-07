@@ -83,10 +83,8 @@ class App extends Component {
     if(e.target.id === "enquiry") {
       if(e.target.selectedIndex === 1) {
         form.comment.active = true;
-        console.log('show comment');
       } else {
         form.comment.active = false;
-        console.log('hide comment');
       }
     }
 
@@ -120,7 +118,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('render', this.state.form.privacy.value);
     return (
       <div className="App">
         <Router>

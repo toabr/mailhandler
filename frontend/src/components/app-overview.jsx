@@ -9,7 +9,6 @@ export default class AppOverview extends Component {
 	componentDidMount() {
 		// backend call
 		getMails(mails => {
-			console.log(mails);
 			this.setState({mails: mails.data});
 		});
 	}

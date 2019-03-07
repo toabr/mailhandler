@@ -10,14 +10,14 @@ export function getMails(callback) {
   })
   .then(data => {
     callback(data);
+    console.log('fetching ...');
   })
-  .catch((err) => {
+  .catch(err => {
     console.log('>> api:', err);
   });
 }
 
 export function sendMail(data) {
-  console.log('sending:', data);
   fetch('/mails',{
     headers: {
       'Accept': 'application/json',
@@ -26,7 +26,7 @@ export function sendMail(data) {
     method: "POST",
     body: JSON.stringify(data)
   })
-  .then(res => { console.log(res.body) })
+  .then(res => { console.log('sending ...') })
   .catch(res => { console.log('catch', res) })
 }
 
